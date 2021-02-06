@@ -1,0 +1,287 @@
+/* *, *:before, *::after{
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.2);
+    } */
+
+* {
+    margin: 0;
+}    
+
+/*********************** Entrada Al portafolio ****************++*/
+.entrar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 300px;
+    border: 1px solid red;
+}
+
+
+.entrar h1 {
+    
+    border: 1px solid red;
+    text-align: center;
+    color: white;
+    padding: 1px 20px;
+    margin: 10px 10px;
+
+}
+
+.entrar p {
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border: inherit;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/****************** Fin Entrar Al portafolio ********************/
+
+body {
+    
+}
+
+/* Cambiando fuente a todos los titulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    /* font-style: italic; */
+}
+
+
+.menu { /* Engloba todo el menu principal*/
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background: black;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu figure {
+    margin-left: 10px;
+}
+
+.menu h1 {
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.menu ul li a:hover {
+    color: rgba(183, 183, 255, 0.9);
+}
+
+/**Fin del menu*/
+
+/*************** Cabecera **********************/
+
+.container-main {
+    margin-top: 0%;
+    height: 85vh;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(14, 14, 83, 0.2) 100%), url(images/work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container-main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35vh; 
+    color: white;
+    text-align: center;  
+}
+
+.Contact-front {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.Contact-front a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+
+}
+
+.Contact-front a:hover {
+    color: aqua;
+    font-size: 1.25em;
+    transition: 0.2s;
+}
+
+/*************************** Fin de la presentacion del header*******************/
+
+.container { /*El DIV container*/
+    max-width: 1240px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    height: inherit;
+    align-items: inherit;
+    flex-wrap: inherit;
+}
+
+/******************* Inicio del contenido Acerca de Mi ***********************/
+
+.description { /* Engloba toda la seccion de sobre mi y skills*/
+    display: block;
+    flex-wrap: wrap;
+    margin: 2vh;
+    padding: 2vh;
+}
+
+.description-my { /* El article que engloba a presentacion*/
+    border: rgb(128, 128, 128, 0.5) solid 0.5px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+.description-my-photo{ /* Engloba Imagen de presentacion*/
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.description-my-photo img {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description h1, .gallery h1 { /*Titulo Presentacion Skills, sobre mi y galeria*/
+    width: 200px;
+    text-align: center;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    
+}
+
+.description-details, .description-details-2{ /* Engloba el h1 y el p De la presentacion */
+    width: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px ; 
+    background-color: rgb(255, 255, 255, 0.8); 
+}
+
+.description-details h2 {
+    background-color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+.description-details p{
+    text-align: justify;  
+    font-size: 1.2em;  
+}
+
+
+.cv { /* Boton de curriculum */
+    font-size: 1.5em;
+    padding: 1vh;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 89, 255,0.1);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.199) 0%, rgba(0, 89, 255, 0.5) 100%);
+}
+
+.cv a { /* Boton de curriculum */
+    text-decoration: none;
+    color:rgb(0, 89, 255);
+}
+
+.skills-img { /* Imagen de skilss*/
+    display: block;
+    flex-wrap: wrap;
+    /*El width esta escrito en el html*/
+}
+
+.skills-img img{ /* Imagen de skilss*/
+    border-radius: 10px;
+}
+
+
+.description-details-2 {
+    display: flex;
+    color: black;
+    border-radius: 10px;
+    width: 450px;
+    
+}
+
+.description-details-2 ul li { /* Mencionado Arriba, este sobrescribe */
+    font-size: 1.3em;
+    list-style: none;
+}
+/********* FIn de la presentacion sobre mi y los skills ************************+/
+
+/************ Galeria de trabajos realizados ******************/
+
+.gallery {
+    display: block;
+    background-color: lightgray;
+}
+
+.gallery-all {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+    background-repeat: no-repeat;
+
+
+}
+
+.gallery-all img{
+    margin: 10px;
+    width: 30%;
+}
