@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     /* font-style: italic; */
 }
 
-
+/************** Inicio del menu ********/
 .menu { /* Engloba todo el menu principal*/
     width: 100%;
     height: 15vh;
@@ -95,14 +95,14 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(183, 183, 255, 0.9);
 }
 
-/**Fin del menu*/
+/************* Fin del menu **********+*/
 
 /*************** Cabecera **********************/
 
 .container-main {
     margin-top: 0%;
     height: 85vh;
-    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(14, 14, 83, 0.2) 100%), url(images/work.jpg);
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(14, 14, 83, 0.2) 100%), url(images/work2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -269,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 .gallery {
     display: block;
     background-color: lightgray;
+    padding: 10px;
 }
 
 .gallery-all {
@@ -277,11 +278,153 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     flex-wrap:wrap;
     background-repeat: no-repeat;
+    width: auto;
 
 
 }
 
 .gallery-all img{
     margin: 10px;
-    width: 30%;
+    width: 300px;
+    height: 600px;
+    display: block;
+    
 }
+
+.gallery-all img:hover {
+    background: black;  
+    cursor: pointer;
+    
+}
+
+/* Section que engloba formulario e iconos de contacto */
+
+.contacto {
+    height: 80px;
+    padding: 40px;
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Iconos de contacto Facebook, instagram, github entre otros*/
+
+.social { /*el div social que engloba los social link */
+    
+}
+
+.social-link { 
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+
+    background-size: 50px 50px;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.facebook {
+    background-image: url('../iconos/bxl-facebook.svg');
+}
+
+.twitter {
+    background-image: url('iconos/bxl-twitter.svg');
+}
+
+.github {
+    background-image: url('iconos/bxl-github.svg');
+}
+
+.instagram {
+    background-image: url('iconos/bxl-instagram.svg');
+}
+
+/*Contacto Formulario Email a la izq de iconos redes sociales*/
+
+.contacto form {
+    
+}
+
+.contacto h3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.contacto input {
+    border-color: gray;
+    padding: 1em 2em 1em 2.5em;
+    border-radius: 5px;
+    border-style: solid;
+
+    background-image: url('./iconos/bxs-message.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.contacto button {
+    display: block;
+    margin-top: 10px;
+    background: white;
+    border-color:gray;
+    color: black;
+    /* padding: 5px 30px; */ width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    /* margin: 10px auto 0; */
+    font-weight: 600;
+}
+
+/****************************************************************/
+/********** Menu Hamburguesa *******/
+.hamburguer-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background-color: rgba(145, 145, 145, 0.9);
+    margin: 10px;
+    padding: 5px;
+    z-index: 5;
+    position: fixed;
+    display: none;
+}
+
+.hamburguer-button:hover {
+    cursor: pointer;
+}
+
+/*******************+ MEDIA QUERIES************/
+@media screen and (max-width:1024px) {
+}
+
+@media screen and (max-width:767px){
+    .menu{
+        display: none;  
+    }
+
+    .container-main {
+        height: 100vh;
+    }
+
+    .icon-menu, .hamburguer-button {
+        display: block;
+    }
+}
+
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px){}
+@media screen and (max-width:480px){}

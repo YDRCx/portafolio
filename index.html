@@ -9,8 +9,10 @@
 
     <!-- BoxIcons (Iconos)-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
     <!-- Icono Pequeño -->
     <link rel="icon" type="image/png" href="../IMG/GrupoTrabajo.svg">
     
@@ -31,13 +33,17 @@
         <nav>  
             <ul>
                 <li><a href="#menu1">Inicio</a></li>
-                <li><a href="">Experiencia</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="">Contactame</a></li>
+                <li><a href="#contact">Contactame</a></li>
             </ul>    
         </nav>
     </header>
     <!-- FIN Menu de navegacion-->
+
+    <!--Menu Hamburguesa-->
+    <img src="iconos/bx-menu.svg" alt="" class="icon-menu hamburguer-button">
+    <!-- Fin menu hamburguesa-->
 
     <!--Incio de la presentacion con la imagen-->
     <main>
@@ -84,10 +90,11 @@
                     <ul>
                         <h1>Front - End </h1>
                         <li>HTML 5</li>
-                        <li>CSS</li>
-                        <li>Preprocesadores:</li> <ul><li>Sass</li></ul>
-                        <li>Framerworks:</li> <ul><li>Boostrap</li></ul>
+                        <li><h3>CSS:</h3> Resposive Desing, Flexbox, Grip Layout.</li>
+                        <li><h3>Preprocesadores:</h3> Sass</li>
+                        <li>Framerworks: Boostrap</li>
                         <li>Javascript</li>
+                        <li>Libreria: React</li>
                         <li>Manejo de Git para trabajos en equipo</li>
                     </ul>
                 </div>
@@ -103,11 +110,11 @@
     </section>
     <!-- FIN Descripcion Sobre Mi-->
     
-        <section class="gallery" id="gallery"> <!--Galeria de imagenes-->
+        <section class="gallery" id="experiencia"> <!--Galeria de imagenes-->
             <div class="container">
                 <h1 class="">Trabajos Realizados</h1>
                 <div class="gallery-all">
-                    <img src="images/cuatro.jpg" alt="" class="img-galeria" width="">
+                    <img src="images/Portafolio.jpeg" alt="" class="img-galeria" height="500px">
                     <img src="images/cuatro.jpg" alt="" class="img-galeria" width="">
                     <img src="images/cuatro.jpg" alt="" class="img-galeria" width="">
                     <img src="images/cuatro.jpg" alt="" class="img-galeria" width="">
@@ -116,6 +123,32 @@
                 </div>
             </div>
         </section>
+
+        <!--Formulario de contacto y los iconos de redes sociales -->
     
+        <section class="contacto" id="contact">
+            <div class="container">
+                <form action="">
+                    <h3>Contactame</h3>
+                    <input type="text" placeholder="Ingresa Tu Email" id="email">
+                    <button>Enviar</button>
+                </form>
+    
+                <div class="social">
+                    <a href="#" class="social-link github"></a>
+                    <a href="#" class="social-link instagram"></a>
+                    <a href="#" class="social-link twitter"></a>
+                    <a href="#" class="social-link facebook"></a>
+                    <!--Los links <a href> por defecto son de inline-->
+                </div>
+            </div>
+        </section>
+
+        <section class="autor"> 
+            <div class="container">
+                <p>Autor: Yefferson Rojas C 2021 Copyright </p>
+
+            </div>
+        </section>
 </body>
 </html>
