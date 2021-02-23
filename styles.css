@@ -5,48 +5,12 @@
 
 * {
     margin: 0;
+    padding: 0;
+    
 }    
 
-/*********************** Entrada Al portafolio ****************++*/
-.entrar {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 300px;
-    border: 1px solid red;
-}
-
-
-.entrar h1 {
-    
-    border: 1px solid red;
-    text-align: center;
-    color: white;
-    padding: 1px 20px;
-    margin: 10px 10px;
-
-}
-
-.entrar p {
-    
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    border: inherit;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}
-
-/****************** Fin Entrar Al portafolio ********************/
-
 body {
-    
+    font-family: 'Fjalla One', sans-serif;
 }
 
 /* Cambiando fuente a todos los titulos */
@@ -59,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 /************** Inicio del menu ********/
 .menu { /* Engloba todo el menu principal*/
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     background: black;
     text-align: center;
@@ -87,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     font-size: 1.2em;
 }
 
@@ -101,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-main {
     margin-top: 0%;
-    height: 85vh;
+    height: 90vh;
     background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(14, 14, 83, 0.2) 100%), url(images/work2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-main-title {
     display: flex;
+    font-size: 35px;
     align-items: center;
     justify-content: center;
     padding-top: 35vh; 
@@ -147,7 +112,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container { /*El DIV container*/
     max-width: 1240px;
+    /* width: 100%; */
     flex: 1;
+    padding: 3%;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -162,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     flex-wrap: wrap;
     margin: 2vh;
-    padding: 2vh;
+    
 }
 
 .description-my { /* El article que engloba a presentacion*/
@@ -170,22 +137,17 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     justify-content: space-evenly;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
 }
 
-.description-my-photo{ /* Engloba Imagen de presentacion*/
-    display: block;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
+.description-my figure {
+    max-width: 30%;
+    padding: 20px;
 }
 
-.description-my-photo img {
-    width: 20%;
+.description-my-photo{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,12 +164,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .description-details, .description-details-2{ /* Engloba el h1 y el p De la presentacion */
-    width: 640px;
+    max-width: 60%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 10px;
     padding: 10px ; 
     background-color: rgb(255, 255, 255, 0.8); 
 }
@@ -242,11 +204,14 @@ h1, h2, h3, h4, h5, h6 {
 .skills-img { /* Imagen de skilss*/
     display: block;
     flex-wrap: wrap;
-    /*El width esta escrito en el html*/
+    padding: 0vh 20px;
+    
 }
 
 .skills-img img{ /* Imagen de skilss*/
     border-radius: 10px;
+    width: 250px;
+    margin: 20px;
 }
 
 
@@ -268,14 +233,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery {
     display: block;
-    background-color: lightgray;
+    background: #f2f2f2;
     padding: 10px;
 }
 
 .gallery-all {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     flex-wrap:wrap;
     background-repeat: no-repeat;
     width: auto;
@@ -284,16 +248,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery-all img{
-    margin: 10px;
-    width: 300px;
-    height: 600px;
-    display: block;
-    
+    object-fit: cover;
+    width: 30%;
+    display: block; 
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgb(0,0,0, 0.5);
+    cursor: pointer;
+
 }
 
 .gallery-all img:hover {
-    background: black;  
-    cursor: pointer;
+
     
 }
 
@@ -389,9 +354,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(145, 145, 145, 0.9);
     margin: 10px;
     padding: 5px;
-    z-index: 5;
+    z-index: 1;
     position: fixed;
-    display: none;
+    display: none; /*Menu hamburguesa desactivado*/
 }
 
 .hamburguer-button:hover {
@@ -403,12 +368,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width:767px){
-    .menu{
-        display: none;  
+    .menu {
+        display: block;
+        height: auto;
     }
 
+    .menu ul {
+        display: initial;
+        flex-wrap: wrap;
+    }
+
+    .menu ul li {
+        height: 50px;
+    }
+
+    .menu ul li a {
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+
+    .menu-items { /* Menu hamburguesa*/
+        left: -100vw;
+        position: fixed;
+        background:rgb(0, 0, 0, 0.9);
+        top: 0;
+        width: 100vw;
+        bottom: 0; /*Estira a toda la pantalla*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .menu-items.is-active { /*Cuando estas dos clases esten activas se ejecutara y aparecera el menu hamburguesa*/
+        left: 0;
+    }
+
+
     .container-main {
-        height: 100vh;
+        height: 90vh;
     }
 
     .icon-menu, .hamburguer-button {
@@ -417,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
     
-}
+
 
 
 
