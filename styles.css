@@ -32,6 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu figure {
+    display: flex;
+    align-items: center;
     margin-left: 10px;
 }
 
@@ -133,24 +135,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .description-my { /* El article que engloba a presentacion*/
-    border: rgb(128, 128, 128, 0.5) solid 0.5px;
+    /* border: rgba(0, 0, 0, 0.5) solid 0.5px; */
     border-radius: 4px;
+    /* background: rgb(128, 128, 128, 0.1); */
     justify-content: space-evenly;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.description-my figure {
-    max-width: 30%;
+.description-my figure { /*Engloba mi foto de presentacion y skills*/
+    max-width: 30%; /*Maximo para que entren los dos contenidos*/ 
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.description-my-photo{
+.description-my-photo, .skills-img img{ /*Mi foto de presentacion y del skills*/
+    width: 70%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+    object-fit: cover;
+}
+
+..skills-img img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .description h1, .gallery h1 { /*Titulo Presentacion Skills, sobre mi y galeria*/
@@ -171,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px ; 
-    background-color: rgb(255, 255, 255, 0.8); 
+    /* background: inherit;  */
 }
 
 .description-details h2 {
@@ -200,20 +210,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color:rgb(0, 89, 255);
 }
-
-.skills-img { /* Imagen de skilss*/
-    display: block;
-    flex-wrap: wrap;
-    padding: 0vh 20px;
-    
-}
-
-.skills-img img{ /* Imagen de skilss*/
-    border-radius: 10px;
-    width: 250px;
-    margin: 20px;
-}
-
 
 .description-details-2 {
     display: flex;
@@ -255,11 +251,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 6px rgb(0,0,0, 0.5);
     cursor: pointer;
 
-}
-
-.gallery-all img:hover {
-
-    
 }
 
 /* Section que engloba formulario e iconos de contacto */

@@ -13,4 +13,16 @@ function hideShow() {
 }
 
 
-burgerbutton.addEventListener('click', hideShow) /*Escucha un evento sobre el menu hamburguesa*/ /*ejecuta la funcion hideshow para activar o desactivar el menu*/
+const ipad = window.matchMedia('screen and (max-width: 767px)') /*Asigno al valor ip la activacion y desactivacion de media querys en 767px*/
+
+ipad.addListener(validation)
+
+function validation(event) {
+    if (event.matches) {
+        burgerbutton.addEventListener('click', hideShow) /*Escucha un evento sobre el menu hamburguesa*/ /*ejecuta la funcion hideshow para activar o desactivar el menu*/
+    } else {
+        burgerbutton.removeEventListener('click', hideShow)
+    }
+}
+
+    validation(ipad); /*Resuelve el bug de que no se active el menu*/
