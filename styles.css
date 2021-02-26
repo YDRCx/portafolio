@@ -336,6 +336,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+.autor {
+    background: f2f2f2;
+    text-align: center;
+    height: 10px;
+}
 /****************************************************************/
 /********** Menu Hamburguesa *******/
 .hamburguer-button {
@@ -357,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 /*******************+ MEDIA QUERIES************/
 @media screen and (max-width:1024px) {
 }
-
+/*767px 767px 767px 767px 767px 767px*/
 @media screen and (max-width:767px){
     .menu {
         display: block;
@@ -377,9 +382,9 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
         align-items: center;
         height: 40px;
-        font-size: 2em;
-        text-decoration: underline;
-        margin-bottom: .5em;
+        font-size: 2.5em;
+        /* text-decoration: underline; */
+        margin: 40px
     }
 
     .menu-items { /* Menu hamburguesa*/
@@ -406,18 +411,51 @@ h1, h2, h3, h4, h5, h6 {
 
     .icon-menu, .hamburguer-button {
         display: block;
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    .menu figure { /*Mini presentacion Yefferson R.*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu figure img { /*Mini presentacion Yefferson R.*/
+        width: 140px;
+    }
+
+    .container-main {
+        height: 93vh;
+    }
+
+    .container-main-title h1 { /*Titulo Principal imagen grande*/
+        font-size: 1.5em;
     }
 }
 
-    
+/*480px 480px 480px 480px 480px 480px*/
+@media screen and (max-width:480px){
+
+    .container-main-title h1 { /*Titulo Principal imagen grande*/
+        font-size: 1em;
+    }
+
+    .description-details, .description-details-2 {
+        font-size: .8em;
+        max-width: 90%;
+    }
 
 
+    .contacto form {
+        
+        
 
+    }
 
-
-
-
-
-
-@media screen and (max-width:480px){}
+    .social {
+        display: block;
+    }
+}
 @media screen and (max-width:480px){}
